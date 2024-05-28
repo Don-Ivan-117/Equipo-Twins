@@ -18,5 +18,14 @@ export class ApiService {
   getRayquaza(){
     return this.http.get(this.URLRayquaza);
   }
-  
+  getLocation(){
+    return this.http.get('https://rickandmortyapi.com/api/location')
+  }
+
+  getCharacterById(id: number){
+    return this.http.get("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20")
+  }
+
+
 }
+
